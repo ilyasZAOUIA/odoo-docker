@@ -28,8 +28,9 @@ curl -fsSL https://raw.githubusercontent.com/ilyasZAOUIA/odoo-docker/main/instal
 sudo pacman -Sy --noconfirm curl && \
 curl -fsSL https://raw.githubusercontent.com/ilyasZAOUIA/odoo-docker/main/install.sh | bash
  ```
-puis faire: docker compse down -v 
-ensuit : docker compose up -d
+!!!!!faire: docker compse down -v
+
+!!!!!ensuit : docker compose up -d
 > Le script installe automatiquement : `git`, `make`, `docker`, `docker compose`
 
 ---
