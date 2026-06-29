@@ -8,25 +8,25 @@ puis lancez le script d'installation.
 **Ubuntu / Debian**
 ```bash
 sudo apt-get install -y curl && \
-curl -fsSL https://raw.githubusercontent.com/tonpseudo/odoo-docker/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/ilyasZAOUIA/odoo-docker/main/install.sh | bash
 ```
 
 **CentOS / RHEL / Rocky Linux**
 ```bash
 sudo yum install -y curl && \
-curl -fsSL https://raw.githubusercontent.com/tonpseudo/odoo-docker/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/ilyasZAOUIA/odoo-docker/main/install.sh | bash
 ```
 
 **Fedora**
 ```bash
 sudo dnf install -y curl && \
-curl -fsSL https://raw.githubusercontent.com/tonpseudo/odoo-docker/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/ilyasZAOUIA/odoo-docker/main/install.sh | bash
 ```
 
 **Arch Linux / Manjaro**
 ```bash
 sudo pacman -Sy --noconfirm curl && \
-curl -fsSL https://raw.githubusercontent.com/tonpseudo/odoo-docker/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/ilyasZAOUIA/odoo-docker/main/install.sh | bash
  ```
 puis faire: docker compse down -v 
 ensuit : docker compose up -d
@@ -73,7 +73,7 @@ newgrp docker
 **Étape 3 — Cloner et démarrer**
 
 ```bash
-git clone https://github.com/tonpseudo/odoo-docker
+git clone https://github.com/ilyasZAOUIA/odoo-docker
 cd odoo-docker
 cp .env.example .env
 nano .env
