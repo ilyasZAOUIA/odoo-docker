@@ -424,12 +424,14 @@ generate_project_files() {
 }
 
 _generate_odoo_conf() {
-    # Charge le mot de passe depuis .env pour l'injecter dans odoo.conf
     local db_password
     db_password=$(grep POSTGRES_PASSWORD "${PROJECT_DIR}/.env" | cut -d= -f2)
 
     cat > "${PROJECT_DIR}/config/odoo.conf" <<EOF
 [options]
+; Le mot de passe maître requis pour créer/supprimer des bases de données
+admin_passwd = ${db_password}
+
 db_host = db
 db_port = 5432
 db_user = odoo
