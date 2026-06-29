@@ -50,7 +50,7 @@ command_exists() {
 }
 
 generate_password() {
-    tr -dc 'A-Za-z0-9' < /dev/urandom | head -c 24
+    head -c 48 /dev/urandom | tr -dc 'A-Za-z0-9' | head -c 24
 }
 
 print_banner() {
