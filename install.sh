@@ -424,8 +424,9 @@ generate_project_files() {
 }
 
 _generate_odoo_conf() {
+    # Charge le mot de passe depuis .env pour l'injecter dans odoo.conf
     local db_password
-    db_password=$(grep "^POSTGRES_PASSWORD=" "${PROJECT_DIR}/.env" | cut -d= -f2)
+    db_password=$(grep POSTGRES_PASSWORD "${PROJECT_DIR}/.env" | cut -d= -f2)
 
     cat > "${PROJECT_DIR}/config/odoo.conf" <<EOF
 [options]
