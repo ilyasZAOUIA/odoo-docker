@@ -80,10 +80,17 @@ nano .env
 make up
 ```
 // make up :	Démarre la stack Odoo + PostgreSQL en arrière-plan
+
 // make down :	Arrête et supprime les conteneurs (les données restent préservées)
+
 // make restart :	Redémarre l'application
+
 // make logs :	Affiche les logs d'Odoo en temps réel (pratique pour le débug)
+
 // make ps :	Vérifie l'état de santé des conteneurs
+
 // make backup :	Lance une sauvegarde complète de la base de données et du filestore
+
 // make shell-odoo :	Ouvre un terminal bash à l'intérieur du conteneur Odoo
+
 // make clean :	Arrête proprement la stack et nettoie les réseaux orphelins
